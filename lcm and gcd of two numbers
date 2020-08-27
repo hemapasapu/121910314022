@@ -1,0 +1,18 @@
+def gcd(a,b): 
+    if a == 0: 
+        return b 
+    return gcd(b % a, a) 
+  
+# Function to return LCM of two numbers 
+def lcm(a,b): 
+    return (a*b) / gcd(a,b) 
+  
+# Driver program to test above function 
+a = 20
+b = 40
+print('LCM of', a, 'and', b, 'is', lcm(a, b))
+print('GCD of',a,'and',b,'is',gcd(a,b))
+
+output:
+LCM of 20 and 40 is 40.0
+GCD of 20 and 40 is 20

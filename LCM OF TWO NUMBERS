@@ -1,0 +1,18 @@
+x = float (input("enter first number:"))
+y = float (input("enter second number:"))
+if(x>y):
+  greater = x
+else:
+  greater = y 
+
+while(True):
+  if((greater% x==0) and (greater% y == 0)):
+      lcm = greater 
+      break
+  greater +=1
+print("the L.C.M. is",lcm)
+
+OUTPUT:
+enter first number:2
+enter second number:4
+the L.C.M. is 4.0

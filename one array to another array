@@ -1,0 +1,22 @@
+# Function to print the array 
+def printArray(arr, Len): 
+  
+    for i in range(Len): 
+        print(arr[i], end = " ") 
+      
+original_arr = [1, 2, 3, 4, 5] 
+Len = len(original_arr) 
+  
+copied_arr = [0 for i in range(Len)] 
+  
+for i in range(Len):  
+    copied_arr[i] = original_arr[Len - i - 1] 
+ 
+print("Original array: ", end = "") 
+printArray(original_arr, Len)
+print("\nResultant array: ", end = "") 
+printArray(copied_arr, Len)
+
+output:
+Original array: 1 2 3 4 5 
+Resultant array: 5 4 3 2 1

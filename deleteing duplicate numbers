@@ -1,0 +1,31 @@
+first way:
+
+# Python code to remove duplicate elements 
+def Remove(duplicate): 
+    final_list = [] 
+    for num in duplicate: 
+        if num not in final_list: 
+            final_list.append(num) 
+    return final_list 
+      
+# Driver Code 
+duplicate = [2, 4, 10, 20, 5, 2, 20, 4] 
+print(Remove(duplicate))
+
+output1:
+[2, 4, 10, 20, 5]
+
+
+
+second way:
+
+first_list = [1, 2, 2, 3, 3, 3, 4, 5, 5, 6]
+ 
+set_list = set(first_list)
+print(list(set_list))
+
+second_list = [2, 3, 3, 2, 5, 4, 4, 6]
+print(list(set(second_list)))
+output2:
+[1, 2, 3, 4, 5, 6]
+[2, 3, 4, 5, 6]
